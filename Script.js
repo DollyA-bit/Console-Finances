@@ -8,9 +8,10 @@ console.log("--------------------------------")
 var startDate = new Date(2010, 0); // Jan  2010
 var endDate = new Date(2017, 1); // Feb 2017
 
-var monthDiff = endDate.getMonth() - startDate.getMonth() +
- (12 * (endDate.getFullYear() - startDate.getFullYear()));
- console.log("Total Months: " + monthDiff); 
+const months = (end.getFullYear() - start.getFullYear()) * 12;
+const totalMonths = months + end.getMonth() - start.getMonth();
+
+console.log(totalMonths); // Output: 84
 
 
 
